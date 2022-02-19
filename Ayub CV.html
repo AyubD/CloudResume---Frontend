@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ayubs CV</title>
+<link rel="stylesheet" href="Ayub CV.css">
+</head>
+<body>
+
+<div class = "Header">
+    <h1>Ayub Duale</h1>
+    <p>07701373656 ● ayubfaisalduale@gmail.com</p>
+</div>
+
+
+
+<div class = "Personal projects">
+    <h1>Personal projects</h1>
+    <h2>Created an AWS CV website, www.ayubduale.com using HTML, CSS, S3, Route53 and CloudFront</h2>
+    <ul>
+        <li>Created website using HTML and CSS</li>
+        <li>Created SSL Certificate to secure website, redirected any un-secure request to HTTPS</li>
+        <li>CloudFront distribution linking S3 bucket as an origin, only allowing access through CloudFront </li>
+        <li>Implemented Route53, Domain CNAME to point to CloudFront.</li>
+    </ul>
+    <h2>Built a dynamic, BGP based, highly available AWS Site-to-Site VPN</h2>
+    <ul>
+        <li>Created the initial AWS environment – 2 subnets, 2 EC2 instances, and the default route pointing at the Transit Gateway</li>
+        <li>Created the simulated on-premises environment – 1 public subnet, 2 private subnets which contains 2 routers</li>
+        <li>Configured two VPN attachment for the transit gateway, which will create two VPN connections, one for each customer gateway</li>
+        <li>On each of the on-premises routers, created 2 IPSEC tunnels and connected them back to AWS</li>
+        <li>Added BGP capabilities using FRR to the on-premises routers which will allow it to exchange routes with AWS</li>
+    </ul>
+    <h2>Evolving WordPress blog post from being hosted on a single EC2 instance to a fully elastic scalable architecture</h2>
+    <ul>
+        <li>Built server manually, to experience and understand all the different components needed to produce the WordPress app</li>
+        <li>Creating a launch template to provide automatic provisioning of the WordPress app</li>
+        <li>Moving the MySQL database and content off the EC2 instance and placing it in a dedicated RDS instance and EFS respectively</li>
+        <li>Provision an ASG and have an ELB point at it, which will result in the system to be fully resilient, self-healing and scalable</li>
+    </ul>
+</div>
+
+<div class = "Experience">
+    <br><h1>Experience</h1>
+    <h2>Desktop Support Engineer  Oct 2018 - Present</h2>
+    <p>Computacenter | London</p>
+    <ul>
+        <li>Advising and providing basic to intermediate level support, 
+            troubleshooting services in a Windows 7/10 environment, 
+            as well as offering simple fixes and fixing known errors for more than 10,000 users in Lloyds Banking Group, 
+            Transport for London, Network Rail, Royal Mail, Home Office, John Lewis etc</li>
+        <li>Resolving hardware faults on HP, Lenovo and Dell devices and 
+            supporting users with their basic Wi-Fi and network connectivity issues</li>
+        <li>Completing software installations and the set-up, 
+            configuring, and reimaging of desktops, workstations, and laptops 
+            in an existing desktop infrastructure</li>
+        <li>Co-ordinating daily meetings with 
+            my team leader and colleagues to discuss each day’s tickets to ensure
+            that any queries are answered and discuss the most efficient way in solving 
+            and closing the tickets</li>
+    </ul>
+    <h2>Sales Assistant</h2>
+    <p>Next | London</p>
+    <ul>
+        <li>Part of the tailoring section team in the menswear department, 
+            helping customers decide the right suit</li>
+        <li>Giving fast and friendly customer service</li>
+        <li>Sharing knowledge about the products that were being sold at Next</li>
+    </ul>
+</div>
+
+<div class = "Certification">
+    <h2>Certification</h2>
+    <p>AZ-900 – Microsoft Certified: Azure Fundamentals								   Oct 2019</p>
+    <p>AWS Certified Solutions Architect – Associate									    Jan 2022</p>
+</div>
+
+<div class = "Education">
+    <h2>Education</h2>
+    <p>University of Greenwich					           Oct 2014 – July 2016</p>
+    <p>Partial degree in Civil Engineering</p>
+</div>
+
+<div class = "VisitorCount">
+    <p>Visitor Count: <span id = "replaceme" /> </p>
+</div>
+
+<script src="Ayub CV.js"></script>
+
+</body>
+</html>
